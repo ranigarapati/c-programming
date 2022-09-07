@@ -1,0 +1,17 @@
+viod towers(int,char,char,char);
+int main()
+{
+int num;
+printf("enter the number of disk");
+scanf("%d,&num");
+printf("the sequence of moves involved in the tower of hanoi are:\n");
+towers(num,'a','b','c');
+retuen 0;
+}
+if (num==1)
+{
+printf("moving ring 1 from %cto %c\n",source,target);
+return;
+}
+towers(num-1,temp,target,source);
+}
