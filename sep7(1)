@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int n,f,f1,f2;
+    printf("enetr the number to check");
+    scanf("%d",&n);
+    f1=0;
+    f2=1;
+    if(n==0)
+    printf("Fiboncii sweries");
+    f=f1+f2;
+    while(f<n)
+    {
+        f1=f2;
+        f2=f;
+        f=f1+f2;
+    }
+    if(f==n)
+    printf("Yes");
+    else
+    printf("No");
+    return 0;
+    }
+enter a number to check:
+5
+Yes
